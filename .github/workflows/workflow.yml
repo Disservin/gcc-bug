@@ -19,7 +19,7 @@ jobs:
 
       - name: Compile main.src
         run: |
-          g++ g++ -O0 -std=c++17 -Wall -Wextra -Wpedantic -Wuninitialized -fno-strict-aliasing -fwrapv -g3 -o main main.cpp
+          g++ -O0 -std=c++17 -Wall -Wextra -Wpedantic -Wuninitialized -fno-strict-aliasing -fwrapv -g3 -o main main.cpp
 
       - name: Run the compiled program
         run: |
